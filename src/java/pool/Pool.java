@@ -13,7 +13,7 @@ public class Pool{
     protected static final String
         host="127.0.0.1",
         port="5432",
-        database="primero",
+        database="servis_antivirus",
         username="postgres",
         password="postgres",
         url="jdbc:postgresql://"+host+":"+port+"/"+database;
