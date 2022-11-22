@@ -1,5 +1,11 @@
 package dto;
 
+/**
+ *
+ *Esta clase es el objeto de petición parametrizado con Usuario
+ *
+ *@author enikyasta
+ */
 public class RequestDTO{
     private boolean status;
     private String fullName,

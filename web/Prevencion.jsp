@@ -21,7 +21,7 @@
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
-		"logo": "/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png"
+		"logo": "./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png"
 }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Prevencion">
@@ -37,30 +37,30 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Servis-Antivirus.html" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}" style="padding: 10px 20px;">Servis Antivirus</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Registrarse.html#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}" style="padding: 10px 20px;">Registrarse</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Seguridad.html#sec-88c9" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}" style="padding: 10px 20px;">Seguridad</a>
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="${pageContext.request.contextPath}/Servis-Antivirus.jsp" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}" style="padding: 10px 20px;">Servis Antivirus</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="${pageContext.request.contextPath}/Registrarse.jsp#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}" style="padding: 10px 20px;">Registrarse</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="${pageContext.request.contextPath}/Seguridad.jsp#sec-88c9" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}" style="padding: 10px 20px;">Seguridad</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 10px 20px;">Informacion</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Prevencion.html#sec-dc8f" style="padding: 10px 20px;">Prevencion</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="${pageContext.request.contextPath}/Prevencion.jsp#sec-dc8f" style="padding: 10px 20px;">Prevencion</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Servis-Antivirus.html" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}">Servis Antivirus</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Registrarse.html#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}">Registrarse</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Seguridad.html#sec-88c9" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}">Seguridad</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="${pageContext.request.contextPath}/Servis-Antivirus.jsp" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}">Servis Antivirus</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="${pageContext.request.contextPath}/Registrarse.jsp#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}">Registrarse</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="${pageContext.request.contextPath}/Seguridad.jsp#sec-88c9" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}">Seguridad</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Informacion</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Prevencion.html#sec-dc8f">Prevencion</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="${pageContext.request.contextPath}/Prevencion.jsp#sec-dc8f">Prevencion</a>
 </li></ul>
               </div>
             </div>
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
         </nav>
-        <a href="/Servis-Antivirus.html" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500" title="Servis Antivirus">
-          <img src="/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" class="u-logo-image u-logo-image-1">
+        <a href="${pageContext.request.contextPath}/Servis-Antivirus.jsp" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500" title="Servis Antivirus">
+          <img src="./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" class="u-logo-image u-logo-image-1">
         </a>
       </div></header>
     <section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" data-image-width="256" data-image-height="256" id="sec-dc8f">
@@ -79,7 +79,7 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-default u-text-1">¿Como prevenirnos de un virus?</h2>
         <p class="u-large-text u-text u-text-default u-text-variant u-text-2"> El cuidado de tu equipo empieza por el uso que le das, y saber cómo evitar virus informáticos que pueda dañarlo, es el primer paso evitar daños posteriores. Los virus informáticos han existido por décadas, y cada vez se perfeccionan mas para lograr su objetivo: conseguir tu información personal.</p>
-        <img class="u-image u-image-default u-image-1" src="/images/mayores-principales-ciberataques-brechas-datos-2020-ciberseguridad-empresas-ransomware-cibercrimen-noticias-recopilacion-aepd-grafico-bitlife-bitlifemedia.webp" alt="" data-image-width="1000" data-image-height="580">
+        <img class="u-image u-image-default u-image-1" src="./images/mayores-principales-ciberataques-brechas-datos-2020-ciberseguridad-empresas-ransomware-cibercrimen-noticias-recopilacion-aepd-grafico-bitlife-bitlifemedia.webp" alt="" data-image-width="1000" data-image-height="580">
         <p class="u-large-text u-text u-text-variant u-text-3"> Existen muchas formas de que tu computador sea infectado por un virus informativo, pero la gran mayoría de ellas pueden ser evitadas aplicando una serie de consejos sencillos. Es por esto en esta oportunidad queremos darte algunos consejos sobre cómo evitar virus informáticos.</p>
       </div>
     </section>
@@ -216,7 +216,7 @@
           <div class="u-tab-content">
             <div class="u-align-left u-container-style u-tab-active u-tab-pane u-white u-tab-pane-1" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
               <div class="u-container-layout u-container-layout-1">
-                <img alt="" class="u-expanded-width-xs u-image u-image-default u-image-1" data-image-width="2672" data-image-height="2672" src="/images/308388787-0.jpeg">
+                <img alt="" class="u-expanded-width-xs u-image u-image-default u-image-1" data-image-width="2672" data-image-height="2672" src="./images/308388787-0.jpeg">
                 <h4 class="u-text u-text-1"> ¿Cómo se detecta un virus informático?</h4>
                 <p class="u-text u-text-2"> Los creadores de malware generan código que resulta muy difícil de detectar hasta que se ejecuta la carga útil. Sin embargo, al igual que con cualquier programa de software, pueden ocurrir errores mientras se ejecuta el virus. Algunas señales de que podría tener un virus informático en el PC son:</p>
                 <ul class="u-text u-text-3">
@@ -282,7 +282,7 @@
               <div class="u-container-layout u-similar-container u-container-layout-1">
                 <p class="u-custom-item u-heading-font u-text u-text-2">Eleccion N#2 para 2022</p>
                 <div class="u-border-1 u-border-palette-1-base u-expanded-width u-line u-line-horizontal u-line-1"></div>
-                <h1 class="u-custom-item u-text u-text-3">Bitdefender<br><span class="u-file-icon u-icon u-icon-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="/images/1828884.png" alt=""></span>&nbsp; <span class="u-file-icon u-icon u-icon-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="/images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-3" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="/images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-4" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="/images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-5" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="/images/1828884.png" alt=""></span> &nbsp;<br>
+                <h1 class="u-custom-item u-text u-text-3">Bitdefender<br><span class="u-file-icon u-icon u-icon-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="./images/1828884.png" alt=""></span>&nbsp; <span class="u-file-icon u-icon u-icon-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="./images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-3" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="./images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-4" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="./images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-5" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="./images/1828884.png" alt=""></span> &nbsp;<br>
                 </h1>
                 <p class="u-custom-item u-heading-font u-text u-text-4">Instalacion rapida y facil</p>
                 <div class="u-border-1 u-border-palette-1-base u-line u-line-horizontal u-line-2"></div>
@@ -297,7 +297,7 @@
               <div class="u-container-layout u-similar-container u-container-layout-2">
                 <p class="u-custom-item u-heading-font u-text u-text-7">Eleccion N#1 para 2022</p>
                 <div class="u-border-1 u-border-palette-1-base u-expanded-width u-line u-line-horizontal u-line-4"></div>
-                <h1 class="u-custom-item u-text u-text-8">McAfee<br><span class="u-file-icon u-icon u-icon-6" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="/images/1828884.png" alt=""></span>&nbsp; <span class="u-file-icon u-icon u-icon-7" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="/images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-8" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="/images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-9" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="/images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-10" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="/images/1828884.png" alt=""></span> &nbsp;<br>
+                <h1 class="u-custom-item u-text u-text-8">McAfee<br><span class="u-file-icon u-icon u-icon-6" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="./images/1828884.png" alt=""></span>&nbsp; <span class="u-file-icon u-icon u-icon-7" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="./images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-8" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="./images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-9" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="./images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-10" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="./images/1828884.png" alt=""></span> &nbsp;<br>
                 </h1>
                 <p class="u-custom-item u-heading-font u-text u-text-9">Incluye gestor de contraseña</p>
                 <div class="u-border-1 u-border-palette-1-base u-line u-line-horizontal u-line-5"></div>
@@ -313,7 +313,7 @@
               <div class="u-container-layout u-similar-container u-container-layout-3">
                 <p class="u-custom-item u-heading-font u-text u-text-12">Eleccion N#3 para 2022</p>
                 <div class="u-border-1 u-border-palette-1-base u-expanded-width u-line u-line-horizontal u-line-7"></div>
-                <h1 class="u-custom-item u-text u-text-13">Panda<br><span class="u-file-icon u-icon u-icon-11" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="/images/1828884.png" alt=""></span>&nbsp; <span class="u-file-icon u-icon u-icon-12" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="/images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-13" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="/images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-14" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="/images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-15" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="/images/1828884.png" alt=""></span> &nbsp;<br>
+                <h1 class="u-custom-item u-text u-text-13">Panda<br><span class="u-file-icon u-icon u-icon-11" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="./images/1828884.png" alt=""></span>&nbsp; <span class="u-file-icon u-icon u-icon-12" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="./images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-13" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="./images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-14" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="./images/1828884.png" alt=""></span><span class="u-file-icon u-icon u-icon-15" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="./images/1828884.png" alt=""></span> &nbsp;<br>
                 </h1>
                 <p class="u-custom-item u-heading-font u-text u-text-14">Instalacion rapida y facil</p>
                 <div class="u-border-1 u-border-palette-1-base u-line u-line-horizontal u-line-8"></div>
@@ -330,7 +330,7 @@
     
     
     <footer class="u-align-center u-black u-clearfix u-footer u-footer" id="sec-f1c2"><div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-circle u-image-1" src="/images/images.png" alt="" data-image-width="299" data-image-height="168">
+        <img class="u-image u-image-circle u-image-1" src="./images/images.png" alt="" data-image-width="299" data-image-height="168">
         <p class="u-text u-text-1" data-lang-en="57+ 3144715508">57+ 3144715508</p>
         <p class="u-small-text u-text u-text-variant u-text-2" data-lang-en="servis_antivirus2022@gmail.com<br>">servis_antivirus2022@gmail.com<br>
         </p>

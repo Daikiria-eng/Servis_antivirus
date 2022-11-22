@@ -1,7 +1,7 @@
 package controller;
 
+import dto.StatsDTO;
 import dto.User;
-
 import manager.Manager;
 import manager.impl.Managerimpl;
 import util.Util;
@@ -14,6 +14,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
+ *
+ *Este servelet es principal, y se bifurca para el resto de servlets
+ *ya que es una aplicación monolítica
  *
  * @author enikyasta
  */
@@ -51,6 +54,9 @@ public class Main extends HttpServlet {
 
     /**
      * Handles the HTTP <code>POST</code> method.
+     *
+     * Aquí se recibe las interacciones del usuario,
+     * y se remiten las peticiones respectivamente
      *
      * @param request servlet request
      * @param response servlet response
@@ -95,6 +101,10 @@ public class Main extends HttpServlet {
                     }else
                         response.sendRedirect("index.jsp");
                     break;
+                }case "stats":{
+                    StatsDTO[] statsArray=manager.getStats().toArray();
+                    out.println("[+] Alright: "+statsArray[0].getModuleName());
+                    break;
                 }
             }
         }
@@ -109,5 +119,4 @@ public class Main extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
 }

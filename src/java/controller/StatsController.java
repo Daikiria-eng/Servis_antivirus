@@ -2,25 +2,29 @@ package controller;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import dao.StatsDAO;
+import dao.impl.StatsDAOimpl;
 import com.google.gson.Gson;
-import dao.UserDAO;
-import dao.impl.UserDAOimpl;
-import dto.RequestDTO;
-import dto.User;
+import dto.StatsDTO;
+import java.io.InputStreamReader;
+import dto.RequestStatsDTO;
 
 /**
  *
+ * Este servlet es el controlador de estadísticas
+ *
  * @author enikyasta
  */
-@WebServlet(name = "UserController", urlPatterns = {"/User"})
-public class UserController extends HttpServlet {
+@WebServlet(name = "StatsController", urlPatterns = {"/Stats"})
+public class StatsController extends HttpServlet {
+
+    StatsDAO statsDao=new StatsDAOimpl();
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,6 +38,7 @@ public class UserController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -54,8 +59,8 @@ public class UserController extends HttpServlet {
     /**
      * Handles the HTTP <code>POST</code> method.
      *
-     * Este servelet actúa con el objeto de usuario, y retorna
-     * según las interacciones del mismo
+     * Aquí se retorna el el objeto de estadística
+     *
      *
      * @param request servlet request
      * @param response servlet response
@@ -66,36 +71,32 @@ public class UserController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
-        PrintWriter out=response.getWriter();
         Gson gson=new Gson();
-        UserDAO userDao=new UserDAOimpl();
 
-        try{
-            String requestString="";
-            BufferedReader br=new BufferedReader(
-                new InputStreamReader(request.getInputStream()
-            ));
-            String temp="";
-            while((temp=br.readLine())!=null){
-                requestString+=temp; 
-            }
-            RequestDTO userRequest=gson.fromJson(requestString, RequestDTO.class);
-            User builtUser=gson.fromJson(requestString, User.class);
+        try ( PrintWriter out = response.getWriter()) {
+            try{
+                InputStreamReader reader=new InputStreamReader(request.getInputStream());
+                BufferedReader br=new BufferedReader(reader);
+                String temp="";
+                RequestStatsDTO requestObject=null;
+                if((temp=br.readLine())!=null)
+                    requestObject=gson.fromJson(temp,RequestStatsDTO.class);
 
-            System.out.printf("[+] UserController action: %s",userRequest.getAction());
-
-            switch(userRequest.getAction()){
-                case "sign_in":{
-                    out.println(userDao.insertUser(builtUser));
-                    break;
-                }case "log_in":{
-                    out.println(userDao.validateUser(builtUser));
-                    break;
+                switch(requestObject.getAction()){
+                    case "insert":{
+                        out.println(
+                            statsDao.insertStat(gson.fromJson(temp, StatsDTO.class))
+                        );
+                        break;
+                    }case "getAll":{
+                        out.println(statsDao.getStats());
+                        break;
+                    }
                 }
+            }catch(IOException e){
+                System.out.println("[-] Error al leer request: "+e);
+                e.printStackTrace();
             }
-        }catch(Exception e){
-            System.out.println("[-] Error al responder");
-            e.printStackTrace();
         }
     }
 

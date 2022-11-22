@@ -1,11 +1,17 @@
 package dto;
 
+/**
+ *
+ *Esta clase es el usuario como objeto
+ *
+ *@author enikyasta
+ */
 public class User{
     private int id;
     private String fullName,
         email,
         password;
-    
+
     public User(){}
     public User(String fullName,String email,String password){
         this.fullName=fullName;

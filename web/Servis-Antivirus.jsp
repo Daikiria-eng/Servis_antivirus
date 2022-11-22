@@ -28,7 +28,7 @@
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
-		"logo": "/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png"
+		"logo": "./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png"
 }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Servis Antivirus">
@@ -44,8 +44,8 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Servis-Antivirus.html" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}" style="padding: 10px 20px;">Servis Antivirus</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Registrarse.html#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}" style="padding: 10px 20px;">Registrarse</a>
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="${pageContext.request.contextPath}/Servis-Antivirus.jsp" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}" style="padding: 10px 20px;">Servis Antivirus</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Registrarse.jsp#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}" style="padding: 10px 20px;">Registrarse</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Seguridad.html#sec-88c9" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}" style="padding: 10px 20px;">Seguridad</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 10px 20px;">Informacion</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Prevencion.html#sec-dc8f" style="padding: 10px 20px;">Prevencion</a>
@@ -55,7 +55,7 @@
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Servis-Antivirus.html" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}">Servis Antivirus</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="${pageContext.request.contextPath}/Servis-Antivirus.jsp" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}">Servis Antivirus</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Registrarse.html#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}">Registrarse</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Seguridad.html#sec-88c9" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}">Seguridad</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Informacion</a>
@@ -66,8 +66,8 @@
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
         </nav>
-        <a href="/Servis-Antivirus.html" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500" title="Servis Antivirus">
-          <img src="/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" class="u-logo-image u-logo-image-1">
+        <a href="${pageContext.request.contextPath}/Servis-Antivirus.jsp" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500" title="Servis Antivirus">
+          <img src="./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" class="u-logo-image u-logo-image-1">
         </a>
       </div></header>
     <section class="u-clearfix u-image u-section-1" id="carousel_7922" data-image-width="1600" data-image-height="1200">
@@ -93,7 +93,7 @@
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
-                  <img class="u-absolute-hcenter-lg u-absolute-hcenter-md u-absolute-hcenter-sm u-absolute-hcenter-xs u-expanded u-image u-image-1" src="/images/PostparaInstagramChatMinimalistaGris.png" data-image-width="1080" data-image-height="1080">
+                  <img class="u-absolute-hcenter-lg u-absolute-hcenter-md u-absolute-hcenter-sm u-absolute-hcenter-xs u-expanded u-image u-image-1" src="./images/PostparaInstagramChatMinimalistaGris.png" data-image-width="1080" data-image-height="1080">
                 </div>
               </div>
             </div>
@@ -111,7 +111,7 @@
                   <h3 class="u-custom-font u-font-merriweather u-text u-text-1">Seguridad</h3>
                   <h5 class="u-custom-font u-font-merriweather u-text u-text-2">Es algo esencial que todo usuario debe tener en su ordenador</h5>
                   <p class="u-custom-font u-font-merriweather u-text u-text-3">Con nuestra ayuda podras mejorar la funcionalidad de tu ordenador</p>
-                  <a href="/Seguridad.html" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-1">Seguir aqui</a>
+                  <a href="${pageContext.request.contextPath}/Seguridad.jsp" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-1">Seguir aqui</a>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2">
@@ -119,7 +119,7 @@
                   <h3 class="u-custom-font u-font-merriweather u-text u-text-4">Información</h3>
                   <h5 class="u-custom-font u-font-merriweather u-text u-text-5">Generar informacion detallada para usuarios&nbsp;</h5>
                   <p class="u-custom-font u-font-merriweather u-text u-text-6">Con nuestras habilidades podremos ayudar a estos usuarios que deseen mejorar su experiencia con los ordenadores&nbsp;</p>
-                  <a href="/Informacion.html" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-2">Seguir aqui</a>
+                  <a href="${pageContext.request.contextPath}/Informacion.jsp" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-2">Seguir aqui</a>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-layout-cell-3">
@@ -127,7 +127,7 @@
                   <h3 class="u-custom-font u-font-merriweather u-text u-text-7">Prevención</h3>
                   <h5 class="u-custom-font u-font-merriweather u-text u-text-8">Mantener alerta a los usuarios de los ataques mas comunes</h5>
                   <p class="u-custom-font u-font-merriweather u-text u-text-9">Encontraras los ataques mas comunes que se pueden identificar facilmente para nuestros usuarios</p>
-                  <a href="/Prevencion.html" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-3">Seguir aqui</a>
+                  <a href="${pageContext.request.contextPath}/Prevencion.jsp" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-3">Seguir aqui</a>
                 </div>
               </div>
             </div>
@@ -159,13 +159,13 @@
           <div class="u-layout-row" style="">
             <div class="u-container-style u-image u-layout-cell u-right-cell u-similar-fill u-size-30 u-image-1" imgwidth="581" imgheight="459">
               <div class="u-container-layout">
-                <img src="/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" alt="" class="u-image u-image-circle u-image-2" data-image-width="500" data-image-height="500">
+                <img src="./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" alt="" class="u-image u-image-circle u-image-2" data-image-width="500" data-image-height="500">
               </div>
             </div>
             <div class="u-container-style u-layout-cell u-left-cell u-palette-1-base u-size-30 u-layout-cell-2">
               <div class="u-container-layout u-container-layout-2">
                 <h2 class="u-heading-font u-text u-text-1">Gracias a nuestro desarrollo Web tendremos la compatibilidad de nuestro servicio en cualquier sistema operativo</h2>
-                <img src="/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" alt="" class="u-image u-image-circle u-image-3" data-image-width="500" data-image-height="500">
+                <img src="./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" alt="" class="u-image u-image-circle u-image-3" data-image-width="500" data-image-height="500">
               </div>
             </div>
           </div>
@@ -313,13 +313,13 @@
             <input type="hidden" name="formServices" value="">
           </form>
         </div>
-        <img src="/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" alt="" class="u-image u-image-circle u-image-1" data-image-width="500" data-image-height="500">
+        <img src="./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" alt="" class="u-image u-image-circle u-image-1" data-image-width="500" data-image-height="500">
       </div>
     </section>
     
     
     <footer class="u-align-center u-black u-clearfix u-footer u-footer" id="sec-f1c2"><div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-circle u-image-1" src="/images/images.png" alt="" data-image-width="299" data-image-height="168">
+        <img class="u-image u-image-circle u-image-1" src="./images/images.png" alt="" data-image-width="299" data-image-height="168">
         <p class="u-text u-text-1" data-lang-en="57+ 3144715508">57+ 3144715508</p>
         <p class="u-small-text u-text u-text-variant u-text-2" data-lang-en="servis_antivirus2022@gmail.com<br>">servis_antivirus2022@gmail.com<br>
         </p>

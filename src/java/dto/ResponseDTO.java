@@ -1,5 +1,10 @@
 package dto;
 
+/**
+ * Esta clase es el objeto de respuesta
+ *
+ *@author enikyasta
+ */
 public class ResponseDTO{
     private boolean status;
 

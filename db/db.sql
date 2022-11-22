@@ -7,7 +7,8 @@ CREATE TABLE users(
 );
 
 CREATE TABLE stadistics(
-    security INT NOT NULL,
-    information INT NOT NULL,
-    prevention INT NOT NULL
+    module VARCHAR(30) NOT NULL,
+    date_count DATE NOT NULL
 );
+
+CREATE INDEX date_count_idx ON stadistics(date_count)

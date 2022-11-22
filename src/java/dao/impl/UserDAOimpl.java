@@ -10,6 +10,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+/**
+ *
+ *Esta es la clase de implementación de acceso al objeto de usuario
+ *
+ *@author enikyasta
+ */
 public class UserDAOimpl implements UserDAO{
     @Override
     public String insertUser(User user){
@@ -25,9 +31,9 @@ public class UserDAOimpl implements UserDAO{
             pst.setString(2,user.getEmail());
             pst.setString(3,user.getPassword());
             boolean rows=pst.executeUpdate()==1;
-            
+
             System.out.println("[+] Ejecturadoo: "+insertIt);
-            
+
             if(!rows) System.out.println("[-] Error insertar usuario");
             return (rows)?
                 gson.toJson(new ResponseDTO(true)):gson.toJson(new ResponseDTO(false));
@@ -57,7 +63,7 @@ public class UserDAOimpl implements UserDAO{
             rs=st.executeQuery(select_query);
             rs.first();
             int row=rs.getRow();
-            
+
             System.out.printf("[+] Query: %s\n\t[+] Row: %d\n",select_query,row);
 
             if(row==1){
@@ -91,7 +97,7 @@ public class UserDAOimpl implements UserDAO{
             rs=st.executeQuery(get_all_users);
             if(rs.last())
                 result=new String[rs.getRow()];
-            
+
             rs.first();
             int i=0;
             do{
@@ -107,7 +113,7 @@ public class UserDAOimpl implements UserDAO{
             System.out.println("[-] Error al obtener todos: "+e);
             e.printStackTrace();
         }
-        
+
         return null;
     }
 }

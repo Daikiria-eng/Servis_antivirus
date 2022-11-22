@@ -22,7 +22,7 @@
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
-		"logo": "/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png"
+		"logo": "./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png"
 }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Informacion">
@@ -38,30 +38,30 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Servis-Antivirus.html" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}" style="padding: 10px 20px;">Servis Antivirus</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Registrarse.html#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}" style="padding: 10px 20px;">Registrarse</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Seguridad.html#sec-88c9" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}" style="padding: 10px 20px;">Seguridad</a>
+              <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="${pageContext.request.contextPath}/Servis-Antivirus.jsp" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}" style="padding: 10px 20px;">Servis Antivirus</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="${pageContext.request.contextPath}/Registrarse.jsp#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}" style="padding: 10px 20px;">Registrarse</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="${pageContext.request.contextPath}/Seguridad.jsp#sec-88c9" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}" style="padding: 10px 20px;">Seguridad</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 10px 20px;">Informacion</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Prevencion.html#sec-dc8f" style="padding: 10px 20px;">Prevencion</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="${pageContext.request.contextPath}/Prevencion.jsp#sec-dc8f" style="padding: 10px 20px;">Prevencion</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Servis-Antivirus.html" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}">Servis Antivirus</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Registrarse.html#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}">Registrarse</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Seguridad.html#sec-88c9" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}">Seguridad</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="${pageContext.request.contextPath}/Servis-Antivirus.jsp" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}">Servis Antivirus</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="${pageContext.request.contextPath}/Registrarse.jsp#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}">Registrarse</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="${pageContext.request.contextPath}/Seguridad.jsp#sec-88c9" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}">Seguridad</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Informacion</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Prevencion.html#sec-dc8f">Prevencion</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="${pageContext.request.contextPath}/Prevencion.jsp#sec-dc8f">Prevencion</a>
 </li></ul>
               </div>
             </div>
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
         </nav>
-        <a href="/Servis-Antivirus.html" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500" title="Servis Antivirus">
-          <img src="/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" class="u-logo-image u-logo-image-1">
+        <a href="${pageContext.request.contextPath}/Servis-Antivirus.jsp" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500" title="Servis Antivirus">
+          <img src="./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" class="u-logo-image u-logo-image-1">
         </a>
       </div></header>
     <section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" data-image-width="256" data-image-height="256" id="sec-88c9" data-href="/blog/blog.html" rel="nofollow">
@@ -82,7 +82,7 @@
           <p style="text-align: center;">
             <span style="font-size: 1.125rem;">La protección de una buena aplicación antivirus es indispensable para mantener la seguridad de cualquier sistema informático. Por eso no está de más conocer cómo funciona un antivirus, cuáles son sus funciones y, también, sus limitaciones.&nbsp;</span>
             <span style="line-height: 2.0;">
-              <img src="/images/553026127-0.jpeg" align="center" style="width: 307px;" class="fr-dib fr-fic" width="570">
+              <img src="./images/553026127-0.jpeg" align="center" style="width: 307px;" class="fr-dib fr-fic" width="570">
               <span style="font-size: 1.125rem;">El software antivirus intenta cubrir las principales formas de ataque a tu dispositivo, ya sea un ordenador o un smartphone, y no contar con algún tipo de protección, sabiendo cómo funciona un antivirus, es una insensatez, ya que son muchas las amenazas que puedes encontrar navegando por Internet o copiando archivos a tu dispositivo.&nbsp;</span>
             </span>
           </p>
@@ -104,8 +104,8 @@
               </div>
               <div class="u-align-center u-black u-container-style u-layout-cell u-size-15 u-layout-cell-2">
                 <div class="u-container-layout u-valign-middle-xs u-container-layout-2">
-                  <img class="u-image u-image-circle u-preserve-proportions u-image-1" src="/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" alt="" data-image-width="500" data-image-height="500">
-                  <img class="u-image u-image-circle u-preserve-proportions u-image-2" src="/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" alt="" data-image-width="500" data-image-height="500">
+                  <img class="u-image u-image-circle u-preserve-proportions u-image-1" src="./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" alt="" data-image-width="500" data-image-height="500">
+                  <img class="u-image u-image-circle u-preserve-proportions u-image-2" src="./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" alt="" data-image-width="500" data-image-height="500">
                 </div>
               </div>
             </div>
@@ -128,7 +128,7 @@
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-14 u-size-xs-60 u-layout-cell-2" src="">
                 <div class="u-container-layout u-container-layout-2" src="">
-                  <img class="u-image u-image-1" src="/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" data-image-width="500" data-image-height="500">
+                  <img class="u-image u-image-1" src="./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" data-image-width="500" data-image-height="500">
                 </div>
               </div>
             </div>
@@ -145,7 +145,7 @@
                 <div class="u-layout-row">
                   <div class="u-container-style u-layout-cell u-left-cell u-size-60 u-layout-cell-1" src="">
                     <div class="u-container-layout u-container-layout-1">
-                      <img class="u-image u-image-default u-image-1" src="/images/image.png" alt="" data-image-width="720" data-image-height="405">
+                      <img class="u-image u-image-default u-image-1" src="./images/image.png" alt="" data-image-width="720" data-image-height="405">
                     </div>
                   </div>
                 </div>
@@ -187,7 +187,7 @@
     
     
     <footer class="u-align-center u-black u-clearfix u-footer u-footer" id="sec-f1c2"><div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-circle u-image-1" src="/images/images.png" alt="" data-image-width="299" data-image-height="168">
+        <img class="u-image u-image-circle u-image-1" src="./images/images.png" alt="" data-image-width="299" data-image-height="168">
         <p class="u-text u-text-1" data-lang-en="57+ 3144715508">57+ 3144715508</p>
         <p class="u-small-text u-text u-text-variant u-text-2" data-lang-en="servis_antivirus2022@gmail.com<br>">servis_antivirus2022@gmail.com<br>
         </p>

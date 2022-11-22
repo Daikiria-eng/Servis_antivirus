@@ -9,7 +9,16 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ *
+ * Esta clase, establece la conexón con la base de datos;
+ * y se utiliza en los diferentes repositorios para la 
+ * persistencia de datos.
+ *
+ * @author enikyasta
+ */
 public class Pool{
+    //variables de conexión
     protected static final String
         host="127.0.0.1",
         port="5432",
@@ -19,6 +28,9 @@ public class Pool{
         url="jdbc:postgresql://"+host+":"+port+"/"+database;
     private static Logger logger=Logger.getLogger(Pool.class.getName()); 
 
+    /**
+     *@return la conexión a la base datos
+     */
     public static Connection getConnection(){
         Connection conn=null;
         try{
@@ -33,6 +45,11 @@ public class Pool{
         return conn;
     }
 
+    /**
+     * Este método es para el cierre de un recurso
+     *
+     * @param rs que es el resltado de dml en la base de datos
+     */
     public static void close(ResultSet rs){
         try{
             rs.close();
@@ -41,6 +58,11 @@ public class Pool{
         }
     }
 
+    /**
+     * Este método es para el cierre de un recurso
+     * 
+     * @param ps que es una sentencia preparada en la base de datos
+     */
     public static void close(PreparedStatement ps){
         try{
             ps.close();
@@ -49,6 +71,11 @@ public class Pool{
         }
     }
 
+    /**
+     * Este método es para el cierre de un recurso
+     * 
+     * @param conn la conexión con la base de datos
+     */
     public static void close(Connection conn){
         try{
             conn.close();
@@ -57,6 +84,11 @@ public class Pool{
         }
     }
 
+    /**
+     * Este método es para el cierre de un recurso
+     *
+     * @param st el estado para interacción con la base de datos
+     */
     public static void close(Statement st){
         try{
             st.close();
