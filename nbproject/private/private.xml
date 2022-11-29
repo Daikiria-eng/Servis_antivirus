@@ -5,8 +5,11 @@
         <group>
             <file>file:/home/enikyasta/Documentos/NetBeansProjects/Servis_antivirus/web/index.jsp</file>
             <file>file:/home/enikyasta/Documentos/NetBeansProjects/Servis_antivirus/src/java/manager/impl/Managerimpl.java</file>
+            <file>file:/home/enikyasta/Documentos/NetBeansProjects/Servis_antivirus/src/java/dto/RequestStatsDTO.java</file>
+            <file>file:/home/enikyasta/Documentos/NetBeansProjects/Servis_antivirus/src/java/controller/StatsController.java</file>
             <file>file:/home/enikyasta/Documentos/NetBeansProjects/Servis_antivirus/src/java/controller/Main.java</file>
             <file>file:/home/enikyasta/Documentos/NetBeansProjects/Servis_antivirus/src/java/dao/impl/ServisAntivirusDAOimpl.java</file>
+            <file>file:/home/enikyasta/Documentos/NetBeansProjects/Servis_antivirus/src/java/dao/impl/StatsDAOimpl.java</file>
             <file>file:/home/enikyasta/Documentos/NetBeansProjects/Servis_antivirus/src/java/dao/impl/UserDAOimpl.java</file>
             <file>file:/home/enikyasta/Documentos/NetBeansProjects/Servis_antivirus/src/java/pool/Pool.java</file>
             <file>file:/home/enikyasta/Documentos/NetBeansProjects/Servis_antivirus/src/java/controller/UserController.java</file>

@@ -38,15 +38,6 @@
   background-image: none;
   padding: 0;
 }
-#Registrarse_btn{
-  padding: 5px;
-  background-color: rgb(0, 191, 255);
-  border: none;
-  
-}
-#Registrarse_btn:hover{
-  cursor: pointer;
-}
 
 @media (max-width: 1199px) {
   .u-section-1 .u-group-1 {
@@ -92,7 +83,15 @@
     margin-right: 100px;
   }
 }
-
+#Registrarse_btn{
+  padding: 5px;
+  background-color: rgb(0, 191, 255);
+  border: none;
+  
+}
+#Registrarse_btn:hover{
+  cursor: pointer;
+}
 @media (max-width: 575px) {
   .u-section-1 .u-sheet-1 {
     min-height: 653px;

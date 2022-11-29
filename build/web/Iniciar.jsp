@@ -1,5 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%String contextPath=request.getContextPath();%>
+<%
+    String contextPath=request.getContextPath();
+%>
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="es">
   <head>
@@ -130,13 +132,13 @@
                     class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="true" autofocus>
                 </div>
                 <div class="u-form-group u-form-name">
-                  <label for="name-a412" class="u-label">Nombre</label>
+                  <label for="name-a412" class="u-label">Contraseña</label>
                   <input type="password" placeholder="ContraseÃ±a" id="name-a412" name="password"
                     class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
                     <input type="hidden" name="accion" value="log_in"/>
                 </div>
                 <div class="u-align-left u-form-group u-form-submit">
-                  <button type="submit" id="Registrarse_btn">Registrarse!</button>
+                  <button type="submit" id="Registrarse_btn">Iniciar!</button>
                 </div>
               </form>
             </div>

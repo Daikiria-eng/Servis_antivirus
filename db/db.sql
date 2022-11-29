@@ -7,8 +7,13 @@ CREATE TABLE users(
 );
 
 CREATE TABLE stadistics(
+    id_user INT NOT NULL,
     module VARCHAR(30) NOT NULL,
-    date_count DATE NOT NULL
+    date_count DATE NOT NULL,
+    CONSTRAINT fk_stadistics_user
+    FOREIGN KEY (id_user)
+    REFERENCES users (id)
+    ON DELETE CASCADE
 );
 
 CREATE INDEX date_count_idx ON stadistics(date_count)

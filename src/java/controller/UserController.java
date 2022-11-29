@@ -71,6 +71,7 @@ public class UserController extends HttpServlet {
         UserDAO userDao=new UserDAOimpl();
 
         try{
+            //Se toma la petición y se lee completa
             String requestString="";
             BufferedReader br=new BufferedReader(
                 new InputStreamReader(request.getInputStream()
@@ -84,10 +85,13 @@ public class UserController extends HttpServlet {
 
             System.out.printf("[+] UserController action: %s",userRequest.getAction());
 
+            //Según el parámetro de acción se determina que se hará con los datos
             switch(userRequest.getAction()){
+                //Caso de registro
                 case "sign_in":{
                     out.println(userDao.insertUser(builtUser));
                     break;
+                //Caso de inicio de sesión
                 }case "log_in":{
                     out.println(userDao.validateUser(builtUser));
                     break;

@@ -1,0 +1,28 @@
+@startuml
+class com.google.gson.Gson
+class controller.Main
+class controller.StatsController
+class controller.UserController
+class dao.StatsDAO
+class dao.UserDAO
+class dao.impl.StatsDAOimpl
+class dao.impl.UserDAOimpl
+class dto.RequestDTO
+class dto.RequestStatsDTO
+class dto.StatsDTO
+class dto.User
+class java.io.BufferedReader
+class java.io.IOException
+class java.io.InputStreamReader
+class java.io.PrintWriter
+class javax.servlet.ServletException
+class javax.servlet.http.HttpServlet
+class javax.servlet.http.HttpServletRequest
+class javax.servlet.http.HttpServletResponse
+class manager.Manager
+class manager.impl.Managerimpl
+class util.Util
+controller.Main --|> javax.servlet.http.HttpServlet
+controller.StatsController --|> javax.servlet.http.HttpServlet
+controller.UserController --|> javax.servlet.http.HttpServlet
+@enduml

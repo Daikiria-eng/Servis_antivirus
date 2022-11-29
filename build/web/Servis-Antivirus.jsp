@@ -9,7 +9,8 @@
 <link rel="stylesheet" href="Servis-Antivirus.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 4.21.12, nicepage.com">
+    <meta name="generator" content="Nicepage 5.0.7, nicepage.com">
+    <meta name="referrer" content="origin">
     <script src="//code.tidio.co/nmtako4yr0lwnqptkbxh2igrmoz428tg.js" async="async"></script>
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i">
@@ -27,11 +28,12 @@
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
-		"name": "",
+		"name": "Site1",
 		"logo": "./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png"
 }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Servis Antivirus">
+    <meta property="og:description" content="">
     <meta property="og:type" content="website">
   </head>
   <body class="u-body u-xl-mode" data-lang="es"><header class="u-black u-clearfix u-header" id="sec-888d" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1">
@@ -44,41 +46,135 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="${pageContext.request.contextPath}/Servis-Antivirus.jsp" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}" style="padding: 10px 20px;">Servis Antivirus</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Registrarse.jsp#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}" style="padding: 10px 20px;">Registrarse</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Seguridad.html#sec-88c9" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}" style="padding: 10px 20px;">Seguridad</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 10px 20px;">Informacion</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Prevencion.html#sec-dc8f" style="padding: 10px 20px;">Prevencion</a>
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Servis-Antivirus.jsp" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.jsp&quot;}" style="padding: 10px 20px;">Servis Antivirus</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Registrarse.jsp#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.jsp&quot;}" style="padding: 10px 20px;">Registrarse</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Informacion.jsp#sec-88c9" style="padding: 10px 20px;">Informacion</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Seguridad.jsp#sec-13dc" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}" style="padding: 10px 20px;">Seguridad</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Prevencion.jsp#sec-dc8f" style="padding: 10px 20px;">Prevencion</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="${pageContext.request.contextPath}/Servis-Antivirus.jsp" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}">Servis Antivirus</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Registrarse.html#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}">Registrarse</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Seguridad.html#sec-88c9" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}">Seguridad</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Informacion</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Prevencion.html#sec-dc8f">Prevencion</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Servis-Antivirus.jsp" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.jsp&quot;}">Servis Antivirus</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Registrarse.jsp#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.jsp&quot;}">Registrarse</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Informacion.jsp#sec-88c9">Informacion</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Seguridad.jsp#sec-13dc" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}">Seguridad</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Prevencion.jsp#sec-dc8f">Prevencion</a>
 </li></ul>
               </div>
             </div>
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
         </nav>
-        <a href="${pageContext.request.contextPath}/Servis-Antivirus.jsp" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500" title="Servis Antivirus">
+        <a href="/Servis-Antivirus.jsp" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500" title="Servis Antivirus">
           <img src="./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" class="u-logo-image u-logo-image-1">
         </a>
       </div></header>
-    <section class="u-clearfix u-image u-section-1" id="carousel_7922" data-image-width="1600" data-image-height="1200">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-container-style u-expanded-width-xs u-group u-group-1">
-          <div class="u-container-layout u-container-layout-1">
-            <h1 class="u-custom-font u-font-merriweather u-text u-text-body-alt-color u-title u-text-1">Servis Antivirus</h1>
-            <p class="u-custom-font u-font-merriweather u-text u-text-white u-text-2">Servis Antivirus es una plataforma que nos permitira obtener informacion y realizar preguntas sobre los antivirus, podremos encontrar sugerencias, ayudas, informacion general y muchas mas opciones adicionales </p>
+    <section class="u-carousel u-slide u-block-a778-1" id="carousel_ab81" data-image-width="1600" data-image-height="1200" data-interval="5000" data-u-ride="carousel">
+      <ol class="u-absolute-hcenter u-carousel-indicators u-block-a778-2">
+        <li data-u-target="#carousel_ab81" data-u-slide-to="0" class="u-active u-grey-30"></li>
+        <li data-u-target="#carousel_ab81" class="u-grey-30" data-u-slide-to="1"></li>
+      </ol>
+      <div class="u-carousel-inner" role="listbox">
+        <div class="u-active u-carousel-item u-clearfix u-image u-section-1-1" data-image-width="1600" data-image-height="1200">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-container-style u-expanded-width u-group u-group-1">
+              <div class="u-container-layout u-container-layout-1">
+                <h1 class="u-custom-font u-font-merriweather u-text u-text-body-alt-color u-title u-text-1">Servis Antivirus</h1>
+                <p class="u-custom-font u-font-merriweather u-text u-text-white u-text-2">Servis Antivirus es una plataforma que nos permitira obtener informacion y realizar preguntas sobre los antivirus, podremos encontrar sugerencias, ayudas, informacion general y muchas mas opciones adicionales </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-align-center u-carousel-item u-clearfix u-image u-shading u-section-1-2" src="" data-image-width="2672" data-image-height="2672">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-accordion u-spacing-2 u-accordion-1">
+              <div class="u-accordion-item">
+                <a class="active u-accordion-link u-border-1 u-border-active-grey-25 u-border-grey-30 u-border-hover-grey-30 u-border-no-left u-border-no-right u-border-no-top u-button-style u-text-active-white u-text-body-alt-color u-text-hover-white u-accordion-link-1" id="link-accordion-7c0e" aria-controls="accordion-7c0e" aria-selected="true">
+                  <span class="u-accordion-link-text">Tiempos de respuestas</span><span class="u-accordion-link-icon u-border-2 u-border-white u-icon u-icon-circle u-text-white u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-efea"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-efea" style="enable-background:new 0 0 512 512;"><g><g><path d="M509.121,125.966c-3.838-3.838-10.055-3.838-13.893,0L256.005,365.194L16.771,125.966c-3.838-3.838-10.055-3.838-13.893,0    c-3.838,3.838-3.838,10.055,0,13.893l246.18,246.175c1.842,1.842,4.337,2.878,6.947,2.878c2.61,0,5.104-1.036,6.946-2.878    l246.17-246.175C512.959,136.021,512.959,129.804,509.121,125.966z"></path>
+</g>
+</g></svg></span>
+                </a>
+                <div class="u-accordion-active u-accordion-pane u-align-left u-container-style u-accordion-pane-1" id="accordion-7c0e" aria-labelledby="link-accordion-7c0e">
+                  <div class="u-container-layout u-valign-top u-container-layout-1">
+                    <h3 class="u-text u-text-1"> Brindamos la capacidad de reducir los tiempos de respuestas a nuestros usuarios por nuestros chat en 1 hora</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="u-accordion-item">
+                <a class="u-accordion-link u-border-1 u-border-active-grey-25 u-border-grey-30 u-border-hover-grey-30 u-border-no-left u-border-no-right u-border-no-top u-button-style u-text-active-white u-text-body-alt-color u-text-hover-white u-accordion-link-2" id="link-accordion-05cb" aria-controls="accordion-05cb" aria-selected="false">
+                  <span class="u-accordion-link-text">Seguridad<br>
+                  </span><span class="u-accordion-link-icon u-border-2 u-border-white u-icon u-icon-circle u-text-white u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-6ce4"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-6ce4" style="enable-background:new 0 0 512 512;"><g><g><path d="M509.121,125.966c-3.838-3.838-10.055-3.838-13.893,0L256.005,365.194L16.771,125.966c-3.838-3.838-10.055-3.838-13.893,0    c-3.838,3.838-3.838,10.055,0,13.893l246.18,246.175c1.842,1.842,4.337,2.878,6.947,2.878c2.61,0,5.104-1.036,6.946-2.878    l246.17-246.175C512.959,136.021,512.959,129.804,509.121,125.966z"></path>
+</g>
+</g></svg></span>
+                </a>
+                <div class="u-accordion-pane u-align-left u-container-style u-accordion-pane-2" id="accordion-05cb" aria-labelledby="link-accordion-05cb">
+                  <div class="u-container-layout u-valign-top u-container-layout-2">
+                    <ul class="u-custom-list u-text u-text-2">
+                      <li>
+                        <div class="u-list-icon">
+                          <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">–</div>
+                        </div>Mattis nunc sed blandit libero volutpat
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="u-accordion-item">
+                <a class="u-accordion-link u-border-1 u-border-active-grey-25 u-border-grey-30 u-border-hover-grey-30 u-border-no-left u-border-no-right u-border-no-top u-button-style u-text-active-white u-text-body-alt-color u-text-hover-white u-accordion-link-3" id="link-accordion-a6bb" aria-controls="accordion-a6bb" aria-selected="false">
+                  <span class="u-accordion-link-text">Informacion</span><span class="u-accordion-link-icon u-border-2 u-border-white u-icon u-icon-circle u-text-white u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-4429"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-4429" style="enable-background:new 0 0 512 512;"><g><g><path d="M509.121,125.966c-3.838-3.838-10.055-3.838-13.893,0L256.005,365.194L16.771,125.966c-3.838-3.838-10.055-3.838-13.893,0    c-3.838,3.838-3.838,10.055,0,13.893l246.18,246.175c1.842,1.842,4.337,2.878,6.947,2.878c2.61,0,5.104-1.036,6.946-2.878    l246.17-246.175C512.959,136.021,512.959,129.804,509.121,125.966z"></path>
+</g>
+</g></svg></span>
+                </a>
+                <div class="u-accordion-pane u-align-left u-container-style u-accordion-pane-3" id="accordion-a6bb" aria-labelledby="link-accordion-a6bb">
+                  <div class="u-container-layout u-container-layout-3">
+                    <ul class="u-custom-list u-text u-text-3">
+                      <li>
+                        <div class="u-list-icon">
+                          <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">–</div>
+                        </div>Interdum velit euismod in pellentesque.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="u-accordion-item">
+                <a class="u-accordion-link u-border-1 u-border-active-grey-25 u-border-grey-30 u-border-hover-grey-30 u-border-no-left u-border-no-right u-border-no-top u-button-style u-text-active-white u-text-body-alt-color u-text-hover-white u-accordion-link-4" id="link-f0f2" aria-controls="f0f2" aria-selected="false">
+                  <span class="u-accordion-link-text">Prevencion</span><span class="u-accordion-link-icon u-border-2 u-border-white u-icon u-icon-circle u-text-white u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-4605"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-4605"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
+                </a>
+                <div class="u-accordion-pane u-align-left u-container-style u-accordion-pane-4" id="f0f2" aria-labelledby="link-f0f2">
+                  <div class="u-container-layout u-container-layout-4">
+                    <ul class="u-custom-list u-text u-text-4">
+                      <li>
+                        <div class="u-list-icon">
+                          <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">–</div>
+                        </div>Interdum velit euismod in pellentesque.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-text-grey-30 u-block-a778-3" href="#carousel_ab81" role="button" data-u-slide="prev">
+        <span aria-hidden="true">
+          <svg class="u-svg-link" viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+                    c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
+        </span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-text-grey-30 u-block-a778-4" href="#carousel_ab81" role="button" data-u-slide="next">
+        <span aria-hidden="true">
+          <svg class="u-svg-link" viewBox="0 0 477.175 477.175"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+                    c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></svg>
+        </span>
+        <span class="sr-only">Siguiente</span>
+      </a>
     </section>
     <section class="u-black u-clearfix u-section-2" id="carousel_5d53">
       <div class="u-clearfix u-sheet u-sheet-1">
@@ -111,7 +207,7 @@
                   <h3 class="u-custom-font u-font-merriweather u-text u-text-1">Seguridad</h3>
                   <h5 class="u-custom-font u-font-merriweather u-text u-text-2">Es algo esencial que todo usuario debe tener en su ordenador</h5>
                   <p class="u-custom-font u-font-merriweather u-text u-text-3">Con nuestra ayuda podras mejorar la funcionalidad de tu ordenador</p>
-                  <a href="${pageContext.request.contextPath}/Seguridad.jsp" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-1">Seguir aqui</a>
+                  <a href="/Seguridad.jsp" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-1">Seguir aqui</a>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2">
@@ -119,7 +215,7 @@
                   <h3 class="u-custom-font u-font-merriweather u-text u-text-4">Información</h3>
                   <h5 class="u-custom-font u-font-merriweather u-text u-text-5">Generar informacion detallada para usuarios&nbsp;</h5>
                   <p class="u-custom-font u-font-merriweather u-text u-text-6">Con nuestras habilidades podremos ayudar a estos usuarios que deseen mejorar su experiencia con los ordenadores&nbsp;</p>
-                  <a href="${pageContext.request.contextPath}/Informacion.jsp" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-2">Seguir aqui</a>
+                  <a href="/Informacion.jsp" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-2">Seguir aqui</a>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-layout-cell-3">
@@ -127,7 +223,7 @@
                   <h3 class="u-custom-font u-font-merriweather u-text u-text-7">Prevención</h3>
                   <h5 class="u-custom-font u-font-merriweather u-text u-text-8">Mantener alerta a los usuarios de los ataques mas comunes</h5>
                   <p class="u-custom-font u-font-merriweather u-text u-text-9">Encontraras los ataques mas comunes que se pueden identificar facilmente para nuestros usuarios</p>
-                  <a href="${pageContext.request.contextPath}/Prevencion.jsp" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-3">Seguir aqui</a>
+                  <a href="/Prevencion.jsp" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-3">Seguir aqui</a>
                 </div>
               </div>
             </div>
@@ -276,10 +372,10 @@
       </div>
     </section>
     <section class="u-align-center u-clearfix u-image u-shading u-section-9" src="" data-image-width="256" data-image-height="256" id="sec-a9ce">
-      <div class="u-clearfix u-sheet u-valign-middle-xl u-sheet-1">
+      <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-default u-text-1">Equipo de trabajo</h2>
-        <img alt="" class="u-image u-image-default u-image-1" data-image-width="500" data-image-height="500" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJtYW4iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAyNTYgMjU2IiBzdHlsZT0id2lkdGg6IDI1NnB4OyBoZWlnaHQ6IDI1NnB4OyI+CjxyZWN0IGZpbGw9IiNDNkQ4RTEiIHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2Ii8+CjxwYXRoIGZpbGw9IiM3Rjk2QTYiIGQ9Ik0xNzIuNiw5My40YzExLjYtNDQuNy0xMS4yLTQ4LjYtMTEuNy00OC4xYy0yMi40LTMxLjMtOTAuMy0xNi44LTc3LjQsNDguMWMtMTMuMy0yLjQtMS44LDMxLjYsMy43LDMyLjEKCWMwLDAsMCwwLDAsMGMwLjIsMCwwLjMsMCwwLjUtMC4xYzE0LjQsNDkuNyw2Mi43LDUwLjIsODAuNywwQzE3Mi4zLDEyNy4zLDE4Ni41LDkzLjMsMTcyLjYsOTMuNHoiLz4KPHBhdGggZmlsbD0iIzdGOTZBNiIgZD0iTTIwNS40LDE3Ny45Yy0yNC02LjEtNDMuNS0xOS44LTQzLjUtMTkuOGwtMjAuNiw2NC44bC04LTIyLjhjMTkuNy0yNy41LTMwLjMtMjcuNS0xMC42LDBsLTgsMjIuOEw5NCwxNTguMQoJYzAsMC0xOS41LDEzLjctNDMuNSwxOS44QzMyLjcsMTgyLjUsMzAsMjU2LDMwLDI1NmgxOTZDMjI2LDI1NiwyMjMuMywxODIuNSwyMDUuNCwxNzcuOXoiLz4KPC9zdmc+Cg==">
-        <img alt="" class="u-image u-image-default u-image-2" data-image-width="500" data-image-height="500" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJtYW4iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAyNTYgMjU2IiBzdHlsZT0id2lkdGg6IDI1NnB4OyBoZWlnaHQ6IDI1NnB4OyI+CjxyZWN0IGZpbGw9IiNDNkQ4RTEiIHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2Ii8+CjxwYXRoIGZpbGw9IiM3Rjk2QTYiIGQ9Ik0xNzIuNiw5My40YzExLjYtNDQuNy0xMS4yLTQ4LjYtMTEuNy00OC4xYy0yMi40LTMxLjMtOTAuMy0xNi44LTc3LjQsNDguMWMtMTMuMy0yLjQtMS44LDMxLjYsMy43LDMyLjEKCWMwLDAsMCwwLDAsMGMwLjIsMCwwLjMsMCwwLjUtMC4xYzE0LjQsNDkuNyw2Mi43LDUwLjIsODAuNywwQzE3Mi4zLDEyNy4zLDE4Ni41LDkzLjMsMTcyLjYsOTMuNHoiLz4KPHBhdGggZmlsbD0iIzdGOTZBNiIgZD0iTTIwNS40LDE3Ny45Yy0yNC02LjEtNDMuNS0xOS44LTQzLjUtMTkuOGwtMjAuNiw2NC44bC04LTIyLjhjMTkuNy0yNy41LTMwLjMtMjcuNS0xMC42LDBsLTgsMjIuOEw5NCwxNTguMQoJYzAsMC0xOS41LDEzLjctNDMuNSwxOS44QzMyLjcsMTgyLjUsMzAsMjU2LDMwLDI1NmgxOTZDMjI2LDI1NiwyMjMuMywxODIuNSwyMDUuNCwxNzcuOXoiLz4KPC9zdmc+Cg==">
+        <img alt="" class="u-image u-image-default u-image-1" data-image-width="1990" data-image-height="2267" src="./images/3bcc9d6d-d419-4298-809a-8eadec60bad1.jpg">
+        <img alt="" class="u-image u-image-default u-image-2" data-image-width="600" data-image-height="750" src="./images/fb013513-7df1-4172-bcf1-03e3c0c5be45.jpg">
         <h5 class="u-text u-text-2">Alexander Munera Sanchez</h5>
         <h5 class="u-text u-text-3">Julian Garcia Araque</h5>
         <p class="u-text u-text-4">Estudiante Politecnico</p>
@@ -334,6 +430,131 @@
       <a class="u-link" href="" target="_blank">
         <span>Website Builder Software</span>
       </a>. 
-    </section>
+    </section><section class="u-align-center u-clearfix u-cookies-consent u-grey-80 u-cookies-consent" id="sec-386d">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-43-md u-size-43-sm u-size-43-xs u-size-46-lg u-size-46-xl u-layout-cell-1">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
+                  <h3 class="u-text u-text-default u-text-1">Cookies &amp; Privacy</h3>
+                  <p class="u-text u-text-default u-text-2"> Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia en nuestro sitio web.</p>
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-14-lg u-size-14-xl u-size-17-md u-size-17-sm u-size-17-xs u-layout-cell-2">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-valign-top-sm u-valign-top-xs u-container-layout-2">
+                  <a href="###" class="u-btn u-button-confirm u-button-style u-palette-1-base u-btn-1">Confirmar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <style> .u-cookies-consent {
+  background-image: none;
+}
+
+.u-cookies-consent .u-sheet-1 {
+  min-height: 212px;
+}
+
+.u-cookies-consent .u-layout-wrap-1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.u-cookies-consent .u-layout-cell-1 {
+  min-height: 152px;
+}
+
+.u-cookies-consent .u-container-layout-1 {
+  padding: 30px 60px;
+}
+
+.u-cookies-consent .u-text-1 {
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.u-cookies-consent .u-text-2 {
+  margin: 8px 20px 0 0;
+}
+
+.u-cookies-consent .u-layout-cell-2 {
+  min-height: 152px;
+}
+
+.u-cookies-consent .u-container-layout-2 {
+  padding: 30px;
+}
+
+.u-cookies-consent .u-btn-1 {
+  margin: 0 auto 0 0;
+}
+
+@media (max-width: 991px) {
+  .u-cookies-consent .u-sheet-1 {
+    min-height: 187px;
+  }
+
+  .u-cookies-consent .u-layout-cell-1 {
+    min-height: 100px;
+  }
+
+  .u-cookies-consent .u-container-layout-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .u-cookies-consent .u-text-2 {
+    margin-right: 0;
+  }
+
+  .u-cookies-consent .u-layout-cell-2 {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-cookies-consent .u-sheet-1 {
+    min-height: 225px;
+  }
+
+  .u-cookies-consent .u-layout-cell-1 {
+    min-height: 154px;
+  }
+
+  .u-cookies-consent .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+
+  .u-cookies-consent .u-layout-cell-2 {
+    min-height: 65px;
+  }
+
+  .u-cookies-consent .u-container-layout-2 {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-cookies-consent .u-sheet-1 {
+    min-height: 121px;
+  }
+
+  .u-cookies-consent .u-layout-cell-1 {
+    min-height: 100px;
+  }
+
+  .u-cookies-consent .u-layout-cell-2 {
+    min-height: 15px;
+  }
+}</style></section><span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; background-image: none; right: 20px; bottom: 20px; padding: 15px;" class="u-back-to-top u-icon u-icon-circle u-opacity u-opacity-85 u-palette-1-base" data-href="#">
+        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg>
+        <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98"><path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path></svg>
+    </span>
   
 </body></html>

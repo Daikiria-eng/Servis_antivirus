@@ -1,6 +1,7 @@
 package pool;
 
 import java.sql.Statement;
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -79,6 +80,19 @@ public class Pool{
     public static void close(Connection conn){
         try{
             conn.close();
+        }catch(SQLException sqle){
+            sqle.printStackTrace();
+        }
+    }
+
+    /**
+     * Este método es para el cierre de un recurso
+     * 
+     * @param cs la conexión con la base de datos
+     */
+    public static void close(CallableStatement cs){
+        try{
+            cs.close();
         }catch(SQLException sqle){
             sqle.printStackTrace();
         }

@@ -7,13 +7,22 @@ package dto;
  *@author enikyasta
  */
 public class StatsDTO {
+    private int idUser;
     private String moduleName,
         date;
 
     public StatsDTO(){}
-    public StatsDTO(String moduleName,String date){
+    public StatsDTO(int idUser,String moduleName,String date){
+        this.idUser=idUser;
         this.moduleName=moduleName;
         this.date=date;
+    }
+
+    public void setIdUser(int idUser){
+        this.idUser=idUser;
+    }
+    public int getIdUser(){
+        return idUser;
     }
     public String getModuleName() {
         return moduleName;
@@ -29,6 +38,6 @@ public class StatsDTO {
     }
     @Override
     public String toString() {
-        return "StatsDTO [moduleName=" + moduleName + ", date=" + date + "]";
+        return "StatsDTO [idUser=" + idUser + ", moduleName=" + moduleName + ", date=" + date + "]";
     }
 }

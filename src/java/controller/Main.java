@@ -7,6 +7,9 @@ import manager.impl.Managerimpl;
 import util.Util;
 import java.io.IOException;
 import java.io.PrintWriter;
+import com.google.gson.Gson;
+import java.sql.Date;
+import java.util.Calendar;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -71,9 +74,14 @@ public class Main extends HttpServlet {
         try(PrintWriter out=response.getWriter()){
 
             Manager manager=new Managerimpl();
+            Gson gson=new Gson();
+            
+            Calendar calendar=null;
 
+            //El parámetro de acción determina lo que se hará con los datos
             String accion=request.getParameter("accion");
             switch(accion){
+                //caso de registro
                 case "sign_up":{
                     User user=new User(
                         request.getParameter("fullName"),
@@ -88,6 +96,7 @@ public class Main extends HttpServlet {
                     else
                         response.sendRedirect("Registrarse.jsp?ErrorMsg=Error+al+Registrarse");
                     break;
+                //caso de inicio de sesión
                 }case "log_in":{
                     User user=new User(
                         request.getParameter("email"),
@@ -96,13 +105,21 @@ public class Main extends HttpServlet {
                         )
                     );
                     String responseManager=manager.validateUser(user);
+                    System.out.println("[*] ResponseManager= "+responseManager);
                     if(responseManager.equals("null")){
                         response.sendRedirect(request.getContextPath()+"/Iniciar.jsp?ErrorMsg=Error+al+Iniciar");
-                    }else
+                    }else{
+                        calendar=Calendar.getInstance();
+                        Date date=new Date(calendar.getTime().getTime());
+                        request.getSession().setAttribute("userObject",gson.fromJson(responseManager,User.class));
+                        request.getSession().setAttribute("date",date.toString());
                         response.sendRedirect("index.jsp");
+                    }
                     break;
+                //Caso de las estadísticas
                 }case "stats":{
                     StatsDTO[] statsArray=manager.getStats().toArray();
+                    request.getSession().setAttribute("StatsArray", statsArray);
                     out.println("[+] Alright: "+statsArray[0].getModuleName());
                     break;
                 }

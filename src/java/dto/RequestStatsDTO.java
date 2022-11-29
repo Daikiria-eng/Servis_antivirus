@@ -1,12 +1,14 @@
 package dto;
 
 public class RequestStatsDTO{
+    private int idUser;
     private String action,
             moduleName,
             date;
 
     public RequestStatsDTO(){}
-    public RequestStatsDTO(String action,String moduleName,String date){
+    public RequestStatsDTO(String action,int idUser,String moduleName,String date){
+        this.idUser=idUser;
         this.action=action;
         this.moduleName=moduleName;
         this.date=date;
@@ -17,6 +19,13 @@ public class RequestStatsDTO{
     }
     public void setAction(String action){
         this.action=action;
+    }
+
+    public void setIdUser(int idUser){
+        this.idUser=idUser;
+    }
+    public int getIdUser(){
+        return idUser;
     }
 
     public String getModuleName(){
