@@ -1,0 +1,47 @@
+body{
+    background-image: url('./images/91134667-0.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#corpse{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    padding: 10px;
+}
+#stadistics{
+    color: white;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.3);
+    /*border: none;
+    border-collapse: collapse;
+    border-radius: 20px;
+    th,td,tr{
+        border: 2px solid black;
+        border-collapse: collapse;
+    }*/
+    td{
+        margin: 0;
+        padding: 0 10px 0 10px;
+    }
+}
+.countingSpace{
+    &.security{
+        background-color: lightgreen;
+    }
+    &.information{
+        background-color: yellow;
+    }
+    &.prevention{
+        background-color: blue;
+    }
+}
+#stadisticsBody{
+    background-color: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    color: white;
+}

@@ -1,5 +1,6 @@
 package dao;
 
+import dto.ModulesDTO;
 import dto.StatsDTO;
 
 /**
@@ -27,5 +28,5 @@ public interface StatsDAO {
      */
     public String insertStat(StatsDTO stat);
 
-    public String getStatsByModule();
+    public String getStatsByModule(ModulesDTO moule,int date);
 }

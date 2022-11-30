@@ -7,6 +7,7 @@ import java.util.Calendar;
 import java.sql.Date;
 import com.google.gson.Gson;
 import dao.StatsDAO;
+import dto.ModulesDTO;
 import dto.StatsDTO;
 import dto.ResponseDTO;
 import java.sql.CallableStatement;
@@ -93,7 +94,7 @@ public class StatsDAOimpl implements StatsDAO{
             cs.setString(4, stat.getDate());
             cs.execute();
             boolean result=cs.getBoolean(1);
-            
+
             return (result)?
                 gson.toJson(new ResponseDTO(result)):gson.toJson(new ResponseDTO(result));
         }catch(Exception e){
@@ -104,46 +105,29 @@ public class StatsDAOimpl implements StatsDAO{
     }
 
     @Override
-    public String getStatsByModule(){
+    public String getStatsByModule(ModulesDTO module,int month){
         String call_stats_by_module="{ ? = CALL count_one_stat(?,?) }";
-        String[] statsv={"security","information","prevention"};
         Connection conn=null;
-        ResultSet rs=null;
         CallableStatement cs=null;
-        Statement st=null;
-
         try{
             conn=Pool.getConnection();
-            st=conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
             cs=conn.prepareCall(call_stats_by_module);
             cs.registerOutParameter(1, Types.INTEGER);
-            cs.setString(2,statsv[0]);
-            cs.setInt(3, 11);
+            cs.setString(2,module.getModuleName());
+            cs.setInt(3, month);
             cs.executeUpdate();
-            
-            System.out.println(cs.getInt(1));
-            
-            return "XD";
+            module.setCount(cs.getInt(1));
+
+            return gson.toJson(module);
         }catch(Exception e){
             System.out.println("[-] Error al traer estadísticas por módulo: "+e);
             e.printStackTrace();
         }finally{
             Pool.close(conn);
-            Pool.close(rs);
             Pool.close(cs);
         }
 
         return null;
-    }
-
-    public static void main(String[] args) throws SQLException {
-        /*ResultSet rs=null;
-        Connection conn=Pool.getConnection();
-        rs = conn.getMetaData().getTypeInfo();
-        while (rs.next())
-            System.out.println(rs.getString("TYPE_NAME") + "\t" + JDBCType.valueOf(rs.getInt("DATA_TYPE")).getName());*/
-        StatsDAOimpl sd=new StatsDAOimpl();
-        System.out.println(sd.getStatsByModule());
     }
 
     /*public static void main(String[] args) {

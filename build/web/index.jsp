@@ -1,7 +1,3 @@
-<%
-    if(request.getSession().getAttribute("userObject")==null)
-        response.sendRedirect("index.jsp");
-%>
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="es"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,14 +29,14 @@
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "Site1",
-		"logo": "./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png"
+		"logo": "/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png"
 }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Servis Antivirus">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
   </head>
-  <body data-home-page="Servis-Antivirus.jsp" data-home-page-title="Servis Antivirus" class="u-body u-xl-mode" data-lang="es"><header class="u-black u-clearfix u-header" id="sec-888d" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1">
+  <body data-home-page="Servis-Antivirus.html" data-home-page-title="Servis Antivirus" class="u-body u-xl-mode" data-lang="es"><header class="u-black u-clearfix u-header" id="sec-888d" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1">
         <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
             <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 7px 0px; font-size: calc(1em + 22px);" data-lang-en="{&quot;content&quot;:&quot;<svg class=\&quot;u-svg-link\&quot; viewBox=\&quot;0 0 24 24\&quot;><use xmlns:xlink=\&quot;http://www.w3.org/1999/xlink\&quot; xlink:href=\&quot;#menu-hamburger\&quot;></use></svg><svg class=\&quot;u-svg-content\&quot; version=\&quot;1.1\&quot; id=\&quot;menu-hamburger\&quot; viewBox=\&quot;0 0 16 16\&quot; x=\&quot;0px\&quot; y=\&quot;0px\&quot; xmlns:xlink=\&quot;http://www.w3.org/1999/xlink\&quot; xmlns=\&quot;http://www.w3.org/2000/svg\&quot;>    <g>        <rect y=\&quot;1\&quot; width=\&quot;16\&quot; height=\&quot;2\&quot;></rect>        <rect y=\&quot;7\&quot; width=\&quot;16\&quot; height=\&quot;2\&quot;></rect>        <rect y=\&quot;13\&quot; width=\&quot;16\&quot; height=\&quot;2\&quot;></rect>    </g></svg>&quot;,&quot;href&quot;:&quot;#&quot;}">
@@ -50,30 +46,30 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Servis-Antivirus.jsp" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.jsp&quot;}" style="padding: 10px 20px;">Servis Antivirus</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Registrarse.jsp#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.jsp&quot;}" style="padding: 10px 20px;">Registrarse</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Informacion.jsp#sec-88c9" style="padding: 10px 20px;">Informacion</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Seguridad.jsp#sec-13dc" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}" style="padding: 10px 20px;">Seguridad</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Prevencion.jsp#sec-dc8f" style="padding: 10px 20px;">Prevencion</a>
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Servis-Antivirus.html" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}" style="padding: 10px 20px;">Servis Antivirus</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Registrarse.html#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}" style="padding: 10px 20px;">Registrarse</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Informacion.html#sec-88c9" style="padding: 10px 20px;">Informacion</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Seguridad.html#sec-13dc" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}" style="padding: 10px 20px;">Seguridad</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Prevencion.html#sec-dc8f" style="padding: 10px 20px;">Prevencion</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Servis-Antivirus.jsp" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.jsp&quot;}">Servis Antivirus</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Registrarse.jsp#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.jsp&quot;}">Registrarse</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Informacion.jsp#sec-88c9">Informacion</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Seguridad.jsp#sec-13dc" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}">Seguridad</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Prevencion.jsp#sec-dc8f">Prevencion</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Servis-Antivirus.html" data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}">Servis Antivirus</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Registrarse.html#sec-ef02" data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}">Registrarse</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Informacion.html#sec-88c9">Informacion</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Seguridad.html#sec-13dc" data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}">Seguridad</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Prevencion.html#sec-dc8f">Prevencion</a>
 </li></ul>
               </div>
             </div>
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
         </nav>
-        <a href="/Servis-Antivirus.jsp" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500" title="Servis Antivirus">
-          <img src="./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" class="u-logo-image u-logo-image-1">
+        <a href="/Servis-Antivirus.html" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500" title="Servis Antivirus">
+          <img src="/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" class="u-logo-image u-logo-image-1">
         </a>
       </div></header>
     <section class="u-carousel u-slide u-block-a778-1" id="carousel_ab81" data-image-width="1600" data-image-height="1200" data-interval="5000" data-u-ride="carousel">
@@ -193,7 +189,7 @@
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
-                  <img class="u-absolute-hcenter-lg u-absolute-hcenter-md u-absolute-hcenter-sm u-absolute-hcenter-xs u-expanded u-image u-image-1" src="./images/PostparaInstagramChatMinimalistaGris.png" data-image-width="1080" data-image-height="1080">
+                  <img class="u-absolute-hcenter-lg u-absolute-hcenter-md u-absolute-hcenter-sm u-absolute-hcenter-xs u-expanded u-image u-image-1" src="/images/PostparaInstagramChatMinimalistaGris.png" data-image-width="1080" data-image-height="1080">
                 </div>
               </div>
             </div>
@@ -211,7 +207,7 @@
                   <h3 class="u-custom-font u-font-merriweather u-text u-text-1">Seguridad</h3>
                   <h5 class="u-custom-font u-font-merriweather u-text u-text-2">Es algo esencial que todo usuario debe tener en su ordenador</h5>
                   <p class="u-custom-font u-font-merriweather u-text u-text-3">Con nuestra ayuda podras mejorar la funcionalidad de tu ordenador</p>
-                  <a href="/Seguridad.jsp" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-1">Seguir aqui</a>
+                  <a href="/Seguridad.html" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-1">Seguir aqui</a>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2">
@@ -219,7 +215,7 @@
                   <h3 class="u-custom-font u-font-merriweather u-text u-text-4">Información</h3>
                   <h5 class="u-custom-font u-font-merriweather u-text u-text-5">Generar informacion detallada para usuarios&nbsp;</h5>
                   <p class="u-custom-font u-font-merriweather u-text u-text-6">Con nuestras habilidades podremos ayudar a estos usuarios que deseen mejorar su experiencia con los ordenadores&nbsp;</p>
-                  <a href="/Informacion.jsp" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-2">Seguir aqui</a>
+                  <a href="/Informacion.html" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-2">Seguir aqui</a>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-layout-cell-3">
@@ -227,7 +223,7 @@
                   <h3 class="u-custom-font u-font-merriweather u-text u-text-7">Prevención</h3>
                   <h5 class="u-custom-font u-font-merriweather u-text u-text-8">Mantener alerta a los usuarios de los ataques mas comunes</h5>
                   <p class="u-custom-font u-font-merriweather u-text u-text-9">Encontraras los ataques mas comunes que se pueden identificar facilmente para nuestros usuarios</p>
-                  <a href="/Prevencion.jsp" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-3">Seguir aqui</a>
+                  <a href="/Prevencion.html" class="u-btn u-btn-round u-button-style u-custom u-palette-2-base u-text-white u-btn-3">Seguir aqui</a>
                 </div>
               </div>
             </div>
@@ -259,13 +255,13 @@
           <div class="u-layout-row" style="">
             <div class="u-container-style u-image u-layout-cell u-right-cell u-similar-fill u-size-30 u-image-1" imgwidth="581" imgheight="459">
               <div class="u-container-layout">
-                <img src="./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" alt="" class="u-image u-image-circle u-image-2" data-image-width="500" data-image-height="500">
+                <img src="/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" alt="" class="u-image u-image-circle u-image-2" data-image-width="500" data-image-height="500">
               </div>
             </div>
             <div class="u-container-style u-layout-cell u-left-cell u-palette-1-base u-size-30 u-layout-cell-2">
               <div class="u-container-layout u-container-layout-2">
                 <h2 class="u-heading-font u-text u-text-1">Gracias a nuestro desarrollo Web tendremos la compatibilidad de nuestro servicio en cualquier sistema operativo</h2>
-                <img src="./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" alt="" class="u-image u-image-circle u-image-3" data-image-width="500" data-image-height="500">
+                <img src="/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" alt="" class="u-image u-image-circle u-image-3" data-image-width="500" data-image-height="500">
               </div>
             </div>
           </div>
@@ -378,8 +374,8 @@
     <section class="u-align-center u-clearfix u-image u-shading u-section-9" src="" data-image-width="256" data-image-height="256" id="sec-a9ce">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-default u-text-1">Equipo de trabajo</h2>
-        <img alt="" class="u-image u-image-default u-image-1" data-image-width="1990" data-image-height="2267" src="./images/3bcc9d6d-d419-4298-809a-8eadec60bad1.jpg">
-        <img alt="" class="u-image u-image-default u-image-2" data-image-width="600" data-image-height="750" src="./images/fb013513-7df1-4172-bcf1-03e3c0c5be45.jpg">
+        <img alt="" class="u-image u-image-default u-image-1" data-image-width="1990" data-image-height="2267" src="/images/3bcc9d6d-d419-4298-809a-8eadec60bad1.jpg">
+        <img alt="" class="u-image u-image-default u-image-2" data-image-width="600" data-image-height="750" src="/images/fb013513-7df1-4172-bcf1-03e3c0c5be45.jpg">
         <h5 class="u-text u-text-2">Alexander Munera Sanchez</h5>
         <h5 class="u-text u-text-3">Julian Garcia Araque</h5>
         <p class="u-text u-text-4">Estudiante Politecnico</p>
@@ -413,13 +409,13 @@
             <input type="hidden" name="formServices" value="">
           </form>
         </div>
-        <img src="./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" alt="" class="u-image u-image-circle u-image-1" data-image-width="500" data-image-height="500">
+        <img src="/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" alt="" class="u-image u-image-circle u-image-1" data-image-width="500" data-image-height="500">
       </div>
     </section>
     
     
     <footer class="u-align-center u-black u-clearfix u-footer u-footer" id="sec-f1c2"><div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-circle u-image-1" src="./images/images.png" alt="" data-image-width="299" data-image-height="168">
+        <img class="u-image u-image-circle u-image-1" src="/images/images.png" alt="" data-image-width="299" data-image-height="168">
         <p class="u-text u-text-1" data-lang-en="57+ 3144715508">57+ 3144715508</p>
         <p class="u-small-text u-text u-text-variant u-text-2" data-lang-en="servis_antivirus2022@gmail.com<br>">servis_antivirus2022@gmail.com<br>
         </p>
@@ -560,6 +556,5 @@
         <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg>
         <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98"><path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path></svg>
     </span>
-
-</body>
-</html>
+  
+</body></html>

@@ -1,6 +1,7 @@
 package dao.impl;
 
 import dto.RequestStatsDTO;
+import dto.ModulesDTO;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,6 +11,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import com.google.gson.Gson;
 import dao.ServisAntivirusDAO;
+import dao.StatsDAO;
+import dao.impl.StatsDAOimpl;
 import dto.RequestDTO;
 import dto.StatsDTO;
 import dto.User;
@@ -24,6 +27,7 @@ import list.StatList;
  */
 public class ServisAntivirusDAOimpl implements ServisAntivirusDAO{
     Gson gson=new Gson();
+    StatsDAO statsDao=new StatsDAOimpl();
 
     /**
      * Este método es el de registro de usuario
@@ -277,5 +281,17 @@ public class ServisAntivirusDAOimpl implements ServisAntivirusDAO{
         }
 
         return null;
+    }
+
+    @Override
+    public ModulesDTO getStatsByModule(String module,int month){
+        ModulesDTO moduleCount=new ModulesDTO(module);
+        Calendar calendar=Calendar.getInstance();
+        moduleCount=gson.fromJson(
+            statsDao.getStatsByModule(moduleCount,month),
+            ModulesDTO.class
+        );
+
+        return moduleCount;
     }
 }

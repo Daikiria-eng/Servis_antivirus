@@ -1,6 +1,7 @@
 package dao;
 
 import dto.StatsDTO;
+import dto.ModulesDTO;
 import dto.User;
 import list.StatList;
 
@@ -42,4 +43,6 @@ public interface ServisAntivirusDAO{
     public StatList getStats();
 
     public String insertStat(StatsDTO stat);
+
+    public ModulesDTO getStatsByModule(String module,int month);
 }
