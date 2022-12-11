@@ -182,8 +182,6 @@ public class UserDAOimpl implements UserDAO{
         return null;
     }
     
-
-    
     /**
      * Este método elimina los usuarios
      * Y realiza la conexión con el servlet aislado
@@ -201,7 +199,7 @@ public class UserDAOimpl implements UserDAO{
 
         try{
             conn=Pool.getConnection();
-            ps=conn.prepareStatement("DELETER FROM users WHERE id_user=?");
+            ps=conn.prepareStatement("DELETE FROM users WHERE id_user=?");
             ps.setInt(1, user.getId());
             //Si no se reportan errores se retorna un objeto json de estado true
             return(ps.executeUpdate()!=1)?

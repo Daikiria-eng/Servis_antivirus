@@ -129,28 +129,4 @@ public class StatsDAOimpl implements StatsDAO{
 
         return null;
     }
-
-    /*public static void main(String[] args) {
-        StatsDAOimpl st=new StatsDAOimpl();
-        String jsonObject=st.getStats();
-        StatList list=new StatList();
-        for(int i=0;i<jsonObject.length();i++){
-            String temp=""+jsonObject.charAt(i),
-                extractedObject="";
-            if(temp.equals("{")){
-                extractedObject+=temp;
-                for(int j=i+1;j<jsonObject.length();j++){
-                    temp=""+jsonObject.charAt(j);
-                    extractedObject+=temp;
-                    if(temp.equals("}")){
-                        i=j;
-                        list.fillStats(extractedObject);
-                        extractedObject="";
-                        break;
-                    }
-                }
-            }
-        }
-        list.printList();
-    }*/
 }

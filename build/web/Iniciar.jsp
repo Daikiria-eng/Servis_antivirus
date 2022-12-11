@@ -1,6 +1,10 @@
+<%@page import="java.util.regex.Pattern"%>
+<%@page import="java.util.regex.Matcher"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
     String contextPath=request.getContextPath();
+    if(request.getSession().getAttribute("userObject")!=null)
+        response.sendRedirect("index.jsp");
 %>
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="es">
@@ -10,7 +14,7 @@
     <meta name="keywords"
       content="âAl crear una cuenta, acepta nuestros&nbsp;TÃ©rminos y condiciones&nbsp;,&nbsp;PolÃ­tica&nbsp;de privacidad y recibir correos electrÃ³nicos deâ Servis Antivirus">
     <meta name="description" content="">
-    <title>Registrarse</title>
+    <title>Iniciar sesión</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
     <link rel="stylesheet" href="Registrarse.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
@@ -32,6 +36,25 @@
   </head>
 
   <body class="u-body u-xl-mode" data-lang="es">
+        <%
+            String Msg=request.getParameter("Msg");
+            System.out.println("1:"+Msg);
+            boolean msgDifNull=Msg!=null;
+            if(msgDifNull){
+                Pattern pattern=Pattern.compile("[<>-]");
+                Matcher matcher=pattern.matcher(Msg);
+                if(matcher.find()){
+                    Msg=matcher.replaceAll("");
+                }
+        %>
+    <script>
+
+        let msg="<%=Msg%>";
+        if(msg!==null && msg!=="" && msg!=="null"){
+            alert(msg);
+        }
+    </script>
+    <%}%>
     <header class="u-black u-clearfix u-header" id="sec-888d" data-animation-name="" data-animation-duration="0"
       data-animation-delay="0" data-animation-direction="">
       <div class="u-clearfix u-sheet u-sheet-1">
@@ -58,13 +81,13 @@
               <li class="u-nav-item"><a
                   class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
                   href="${pageContext.request.contextPath}/Servis-Antivirus.jsp"
-                  data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}"
+                  data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.jsp&quot;}"
                   style="padding: 10px 20px;">Servis Antivirus</a>
               </li>
               <li class="u-nav-item"><a
                   class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
                   href="${pageContext.request.contextPath}/Registrarse.jsp#sec-ef02"
-                  data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}"
+                  data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.jsp&quot;}"
                   style="padding: 10px 20px;">Registrarse</a>
               </li>
               <li class="u-nav-item"><a
@@ -89,11 +112,11 @@
                 <div class="u-menu-close"></div>
                 <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
                   <li class="u-nav-item"><a class="u-button-style u-nav-link" href="${pageContext.request.contextPath}/Servis-Antivirus.jsp"
-                      data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}">Servis
+                      data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.jsp&quot;}">Servis
                       Antivirus</a>
                   </li>
                   <li class="u-nav-item"><a class="u-button-style u-nav-link" href="${pageContext.request.contextPath}/Registrarse.jsp#sec-ef02"
-                      data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}">Registrarse</a>
+                      data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.jsp&quot;}">Registrarse</a>
                   </li>
                   <li class="u-nav-item"><a class="u-button-style u-nav-link" href="${pageContext.request.contextPath}/Seguridad.jsp#sec-88c9"
                       data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}">Seguridad</a>
@@ -121,7 +144,7 @@
         <div class="u-align-left u-container-style u-expanded-width-xs u-grey-5 u-group u-group-1">
           <div class="u-container-layout u-container-layout-1">
             <h3 class="u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-1">
-              Registrate, aprende mas de seguridad.</h3>
+              Iniciar sesión</h3>
             <div class="u-expanded-width-xs u-form u-form-1">
               <form method="POST" action="<%=contextPath%>/ppal"
                 class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form"
@@ -142,12 +165,8 @@
                 </div>
               </form>
             </div>
-            <h2 class="u-text u-text-2"> Al crear una cuenta, acepta nuestros&nbsp;<a href="https://nicepage.com/Terms"
-                target="_blank"
-                class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">TÃ©rminos
-                y condiciones</a>&nbsp;,&nbsp;<a href="https://nicepage.com/Privacy" target="_blank"
-                class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3">PolÃ­tica</a>&nbsp;de
-              privacidad y recibir correos electrÃ³nicos deâ Servis Antivirus
+            <h2 class="u-text u-text-2">No tienes cuenta? <a href="${pageContext.request.contextPath}/Registrarse.jsp"
+                class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">Registrate aquí</a>
             </h2>
           </div>
         </div>

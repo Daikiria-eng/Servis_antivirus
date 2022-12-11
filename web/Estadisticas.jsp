@@ -1,9 +1,22 @@
 <%@page import="dto.ModulesDTO"%>
+<%@page import="dto.User"%>
 <%@page import="dao.ServisAntivirusDAO" %>
 <%@page import="dao.impl.ServisAntivirusDAOimpl" %>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.util.Calendar"%>
 <%
+    User userObject = null;
+    try {
+        userObject = (User) request.getSession().getAttribute("userObject");
+    } catch (Exception e) {
+        System.out.println("[-] Es un hijodeputa error: " + e);
+        e.printStackTrace();
+        response.sendRedirect("index.jsp");
+    }
+    System.out.printf("userObject = [ %s ]", userObject);
+    if (userObject == null || !userObject.getFullName().equals("admin")) {
+        response.sendRedirect("index.jsp");
+    }
     ServisAntivirusDAO servisDao = new ServisAntivirusDAOimpl();
     String[] modulesV = {"security", "prevention", "information"};
     ModulesDTO[] modulesCount = new ModulesDTO[3];
@@ -35,7 +48,7 @@
             "@context": "http://schema.org",
             "@type": "Organization",
             "name": "Site1",
-            "logo": "/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png"
+            "logo": "./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png"
             }</script>
         <meta name="theme-color" content="#478ac9">
         <meta property="og:title" content="Servis Antivirus">
@@ -43,7 +56,7 @@
         <meta property="og:type" content="website">
     </head>
 
-    <body data-home-page="Servis-Antivirus.html" data-home-page-title="Servis Antivirus" class="u-body u-xl-mode"
+    <body data-home-page="${pageContext.request.contextPath}/Servis-Antivirus.jsp" data-home-page-title="Servis Antivirus" class="u-body u-xl-mode"
           data-lang="es">
         <header class="u-black u-clearfix u-header" id="sec-888d" data-animation-name="" data-animation-duration="0"
                 data-animation-delay="0" data-animation-direction="">
@@ -70,29 +83,29 @@
                         <ul class="u-nav u-unstyled u-nav-1">
                             <li class="u-nav-item"><a
                                     class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                                    href="/Servis-Antivirus.html"
-                                    data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}"
+                                    href="${pageContext.request.contextPath}/Servis-Antivirus.jsp"
+                                    data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.jsp&quot;}"
                                     style="padding: 10px 20px;">Servis Antivirus</a>
                             </li>
                             <li class="u-nav-item"><a
                                     class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                                    href="/Registrarse.html#sec-ef02"
-                                    data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}"
+                                    href="${pageContext.request.contextPath}/Registrarse.jsp#sec-ef02"
+                                    data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.jsp&quot;}"
                                     style="padding: 10px 20px;">Registrarse</a>
                             </li>
                             <li class="u-nav-item"><a
                                     class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                                    href="/Informacion.html#sec-88c9" style="padding: 10px 20px;">Informacion</a>
+                                    href="${pageContext.request.contextPath}/Informacion.jsp#sec-88c9" style="padding: 10px 20px;">Informacion</a>
                             </li>
                             <li class="u-nav-item"><a
                                     class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                                    href="/Seguridad.html#sec-13dc"
+                                    href="${pageContext.request.contextPath}/Seguridad.jsp#sec-13dc"
                                     data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}"
                                     style="padding: 10px 20px;">Seguridad</a>
                             </li>
                             <li class="u-nav-item"><a
                                     class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                                    href="/Prevencion.html#sec-dc8f" style="padding: 10px 20px;">Prevencion</a>
+                                    href="${pageContext.request.contextPath}/Prevencion.jsp#sec-dc8f" style="padding: 10px 20px;">Prevencion</a>
                             </li>
                         </ul>
                     </div>
@@ -101,21 +114,21 @@
                             <div class="u-inner-container-layout u-sidenav-overflow">
                                 <div class="u-menu-close"></div>
                                 <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-                                    <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Servis-Antivirus.html"
-                                                              data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.html&quot;}">Servis
+                                    <li class="u-nav-item"><a class="u-button-style u-nav-link" href="${pageContext.request.contextPath}/Servis-Antivirus.jsp"
+                                                              data-lang-en="{&quot;content&quot;:&quot;Servis Antivirus&quot;,&quot;href&quot;:&quot;Servis-Antivirus.jsp&quot;}">Servis
                                             Antivirus</a>
                                     </li>
-                                    <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Registrarse.html#sec-ef02"
-                                                              data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.html&quot;}">Registrarse</a>
+                                    <li class="u-nav-item"><a class="u-button-style u-nav-link" href="${pageContext.request.contextPath}/Registrarse.jsp#sec-ef02"
+                                                              data-lang-en="{&quot;content&quot;:&quot;Contacto&quot;,&quot;href&quot;:&quot;Contacto.jsp&quot;}">Registrarse</a>
                                     </li>
                                     <li class="u-nav-item"><a class="u-button-style u-nav-link"
-                                                              href="/Informacion.html#sec-88c9">Informacion</a>
+                                                              href="${pageContext.request.contextPath}/Informacion.jsp#sec-88c9">Informacion</a>
                                     </li>
-                                    <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Seguridad.html#sec-13dc"
+                                    <li class="u-nav-item"><a class="u-button-style u-nav-link" href="${pageContext.request.contextPath}/Seguridad.jsp#sec-13dc"
                                                               data-lang-en="{&quot;content&quot;:&quot;Seguridad&quot;,&quot;href&quot;:&quot;#&quot;}">Seguridad</a>
                                     </li>
                                     <li class="u-nav-item"><a class="u-button-style u-nav-link"
-                                                              href="/Prevencion.html#sec-dc8f">Prevencion</a>
+                                                              href="${pageContext.request.contextPath}/Prevencion.jsp#sec-dc8f">Prevencion</a>
                                     </li>
                                 </ul>
                             </div>
@@ -123,7 +136,7 @@
                         <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
                     </div>
                 </nav>
-                <a href="/Servis-Antivirus.html" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500" title="Servis Antivirus"><img src="/images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" class="u-logo-image u-logo-image-1">
+                <a href="${pageContext.request.contextPath}/Servis-Antivirus.jsp" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500" title="Servis Antivirus"><img src="./images/LogotipoTiendaDeModaMinimalistaBlancoyNegro.png" class="u-logo-image u-logo-image-1">
                 </a></div>
         </header>
         <div id="coprse">
@@ -132,45 +145,104 @@
                 <h3>Por módulo</h3>
                 <table id="stadistics">
                     <%
-                        try{
+                        try {
                             int month = Integer.valueOf(new SimpleDateFormat("MM").format(Calendar.getInstance().getTime()));
                             for (int i = 0; i < modulesV.length; i++) {
                                 modulesCount[i] = servisDao.getStatsByModule(
                                         modulesV[i], month
                                 );
+                                System.out.println(modulesCount[i]);
                             }
 
                             for (int i = 0; i < modulesCount.length; i++) {
                     %>
-                            <tr>
-                                <td class="countingSpace moduleName"><%=modulesCount[i].getModuleName()%></td>
-                            <%for(int j=0;j<modulesCount[i].getCount();j++){%> 
-                                <td class="countingSpace <%=modulesCount[i].getModuleName()%>"></td>
-                            <%}%>
-                            </tr>
+                    <tr>
+                        <td class="countingSpace moduleName"><%=modulesCount[i].getModuleName()%></td>
+                        <%for (int j = 0; j < modulesCount[i].getCount(); j++) {%> 
+                        <td class="countingSpace <%=modulesCount[i].getModuleName()%>"></td>
+                        <%}%>
+                    </tr>
 
                     <%}
-                        }catch(Exception e){
+                        } catch (Exception e) {
                             System.out.println("[+] Error al imprimir estadísticas");
                             e.printStackTrace();
                         }%>
-                        <%
-                            int[] counted={modulesCount[0].getCount(),modulesCount[1].getCount(),modulesCount[2].getCount()};
-                            int index=counted[0];
-                            for(int i=0;i<3;i++){
-                                int currentNum=counted[i];
-                                if(currentNum>index)
-                                    index=currentNum;
+                    <%
+                        int[] counted = {modulesCount[0].getCount(), modulesCount[1].getCount(), modulesCount[2].getCount()};
+                        int index = counted[0];
+                        for (int i = 0; i < 3; i++) {
+                            int currentNum = counted[i];
+                            if (currentNum > index) {
+                                index = currentNum;
                             }
-                        %>
-                        <tr>
-                            <td>Usuarios</td>
-                            <%for(int i=1;i<index;i++){%>
-                                <td><%=i%></td>
-                            <%}%>
-                        </tr>
+                        }
+                    %>
+                    <tr>
+                        <td>Usuarios</td>
+                        <%for (int i = 1; i < index; i++) {%>
+                        <td><%=i%></td>
+                        <%}%>
+                    </tr>
                 </table>
+                <!--<div id="through_month">
+                    <button id="prev_month">Mes anterior</button>
+                    <script type="text/javascript">
+                        let stadisticsBody=document.querySelector('#stadisticsBody');
+                        let buttonMover=document.querySelector('#prev_month');
+                        buttonMover.addEventListener('click',=()=>{
+                            
+                        });
+                        let tableStats=
+                        `                <table id="stadistics">
+                <%
+                    try {
+                        int month = Integer.valueOf(new SimpleDateFormat("MM").format(Calendar.getInstance().getTime()));
+                        for (int i = 0; i < modulesV.length; i++) {
+                            modulesCount[i] = servisDao.getStatsByModule(
+                                    modulesV[i], month
+                            );
+                            System.out.println(modulesCount[i]);
+                        }
+
+                        for (int i = 0; i < modulesCount.length; i++) {
+                %>
+                        <tr>
+                            <td class="countingSpace moduleName"><%=modulesCount[i].getModuleName()%></td>
+                <%for (int j = 0; j < modulesCount[i].getCount(); j++) {%> 
+                    <td class="countingSpace <%=modulesCount[i].getModuleName()%>"></td>
+                <%}%>
+                </tr>
+
+                <%}
+                    } catch (Exception e) {
+                        System.out.println("[+] Error al imprimir estadísticas");
+                        e.printStackTrace();
+                    }%>
+                <%
+                    int[] countedd = {modulesCount[0].getCount(), modulesCount[1].getCount(), modulesCount[2].getCount()};
+                    int indexx = countedd[0];
+                    for (int i = 0; i < 3; i++) {
+                        int currentNum = countedd[i];
+                        if (currentNum > indexx) {
+                            index = currentNum;
+                        }
+                    }
+                %>
+                <tr>
+                    <td>Usuarios</td>
+                <%for (int i = 1; i < indexx; i++) {%>
+                    <td><%=i%></td>
+                <%}%>
+            </tr>
+    </table>`;
+let throughMonth=document.querySelector('#through_month');
+throughMonth.innerHTML+=tableStats;
+
+</script>-->
             </div>
         </div>
-    </body>
+    </div>
+    <script src="js/estadisticas.js"></script>
+</body>
 </html>

@@ -92,9 +92,9 @@ public class Main extends HttpServlet {
                     );
                     String responseManager=manager.insertUser(user);
                     if(responseManager!=null)
-                        response.sendRedirect("index.jsp");
+                        response.sendRedirect("Iniciar.jsp?Msg=Registro+exitoso!");
                     else
-                        response.sendRedirect("Registrarse.jsp?ErrorMsg=Error+al+Registrarse");
+                        response.sendRedirect("Registrarse.jsp?Msg=Error+al+Registrarse");
                     break;
                 //caso de inicio de sesión
                 }case "log_in":{
@@ -107,7 +107,7 @@ public class Main extends HttpServlet {
                     String responseManager=manager.validateUser(user);
                     System.out.println("[*] ResponseManager= "+responseManager);
                     if(responseManager.equals("null")){
-                        response.sendRedirect(request.getContextPath()+"/Iniciar.jsp?ErrorMsg=Error+al+Iniciar");
+                        response.sendRedirect(request.getContextPath()+"/Iniciar.jsp?Msg=Error+al+Iniciar");
                     }else{
                         calendar=Calendar.getInstance();
                         Date date=new Date(calendar.getTime().getTime());
